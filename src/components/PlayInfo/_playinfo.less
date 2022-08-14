@@ -1,0 +1,75 @@
+.quote {
+  margin-top: 33px;
+}
+
+.shipping,
+.play,
+.quality {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  border: 1px dashed #dcdbdb;
+  border-radius: 10px;
+  padding: 30px 25px;
+  margin-bottom: 30px;
+  height: 150px;
+}
+
+.quote-text {
+  display: flex;
+  flex-direction: column;
+  text-transform: capitalize;
+  margin-left: 10px;
+  text-align: center;
+}
+.quote-title {
+  font-size: 25px;
+  font-weight: 500;
+}
+.quote-subtitle {
+  font-size: 20px;
+  font-weight: 200;
+}
+.quote-icon {
+  display: flex;
+  justify-content: center;
+  width: 57px;
+  height: 45px;
+}
+@media screen and (min-width: 768px) {
+  .quote-text {
+    text-align: left;
+  }
+  .quoteIcon {
+    height: 25px;
+  }
+  .quotetitle {
+    font-size: @font-size-base;
+  }
+  .quotesubtitle {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .quote {
+    grid-template-columns: auto;
+    row-gap: 20px;
+  }
+  .shipping,
+  .play,
+  .quality {
+    display: grid;
+  }
+  .quote-text {
+    align-items: center;
+  }
+  .quote-icon {
+    width: 100%;
+  }
+  .quote-title {
+    font-size: 20px;
+  }
+  .quote-subtitle {
+    font-size: @font-size-lg;
+  }
+}
